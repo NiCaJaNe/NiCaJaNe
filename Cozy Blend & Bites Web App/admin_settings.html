@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin: Setting</title>
+    <link rel="stylesheet" href="admin_settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="#" class="nav-item1"><i class="fas fa-bell"></i></a>
+                    <a href="#" class="nav-item2 profile-icon">
+                        <img src="profile.jpg" alt="Profile Picture">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-drawer" id="navDrawer">
+        <div class="nav-drawer-header">
+            <img src="img_home.png" alt="Shop Logo">
+            <h2>Cozy Blend and Bites</h2>
+        </div>
+        <a href="admin_ui.html"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="admin_order1_page.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+        <a href="admin_products.html"><i class="fas fa-box-open"></i> Products</a>
+        <a href="admin_customers.html"><i class="fas fa-users"></i> Customers</a>
+        <a href="admin_reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+        <a href="admin_settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    
+    <main class="main-container">
+        <div class="container">
+        
+            <!-- Payment Methods Section -->
+            <div class="settings-container">
+                <h3 class="settings-title">Payment Methods</h3>
+                <div class="toggle-switch">
+                    <span>PayPal</span>
+                    <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="toggle-switch">
+                    <span>Gcash</span>
+                    <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="toggle-switch">
+                    <span>Bank Transfer</span>
+                    <input type="checkbox" class="form-check-input">
+                </div>
+            </div>
+    
+            <div class="settings-container">
+                <h3 class="settings-title1">Shipping Zones and Rates</h3>
+            
+               <div class="shipping-form-container">
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <select id="location" class="form-control">
+                            <option value="" disabled selected>Select a municipality</option>
+                            <option value="Daet">Daet</option>
+                            <option value="Labo">Labo</option>
+                            <option value="Talisay">Talisay</option>
+                            <option value="Vinzons">Vinzons</option>
+                            <option value="Jose Panganiban">Jose Panganiban</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Basud">Basud</option>
+                            <option value="San Vicente">San Vicente</option>
+                            <option value="Capalonga">Capalonga</option>
+                            <option value="Santa Elena">Santa Elena</option>
+                            <option value="San Lorenzo Ruiz">San Lorenzo Ruiz</option>
+                            <option value="Paracale">Paracale</option>
+                        </select>
+                    </div>
+
+    <div class="form-group-container">
+        <div class="form-group">
+            <label for="shipping-rate">Shipping Rate:</label>
+            <input type="number" id="shipping-rate" class="form-control" placeholder="Enter shipping rate" min="0">
+        </div>
+        <button class="btn Shipping Zone" id="add-shipping">Add Shipping Zone</button>
+    </div>
+</div>
+
+                
+            
+                <table class="table table-bordered" id="shipping-table">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Location</th>
+                            <th>Shipping Rate</th>
+            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daet</td>
+                            <td>₱100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Labo</td>
+                            <td>₱120.00</td>
+                        </tr>
+                        <tr>
+                            <td>Paracale</td>
+                            <td>₱150.00</td>
+                        </tr>
+                        <tr>
+                            <td>Jose Panganiban</td>
+                            <td>₱130.00</td>
+                        </tr>
+                        <tr>
+                            <td>Mercedes</td>
+                            <td>₱110.00</td>
+                        </tr>
+                        <tr>
+                            <td>Basud</td>
+                            <td>₱140.00</td>
+                        </tr>
+                        <tr>
+                            <td>Vinzons</td>
+                            <td>₱125.00</td>
+                        </tr>
+                        <tr>
+                            <td>San Vicente</td>
+                            <td>₱115.00</td>
+                        </tr>
+                        <tr>
+                            <td>Santa Elena</td>
+                            <td>₱160.00</td>
+                        </tr>
+                        <tr>
+                            <td>Capalonga</td>
+                            <td>₱170.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+            </div>
+
+            <div class="overlay" id="overlay"></div>
+            <div class="logout-dialog" id="logoutDialog">
+                <p>Are you sure you want to log out?</p>
+                <div class="dialog-buttons">
+                    <button class="confirm-logout" id="confirmLogout">Yes</button>
+                    <button class="cancel-logout" id="cancelLogout">Cancel</button>
+                </div>
+            </div>
+  
+            
+            <script>
+                document.getElementById('add-shipping').addEventListener('click', function () {
+                    var location = document.getElementById('location').value;
+                    var rate = document.getElementById('shipping-rate').value;
+            
+                    if (location === "" || rate === "") {
+                        alert("Please select a location and enter a shipping rate.");
+                        return;
+                    }
+            
+                    var tableBody = document.getElementById('shipping-table').getElementsByTagName('tbody')[0];
+            
+                    var newRow = tableBody.insertRow();
+                    var cell1 = newRow.insertCell(0);
+                    var cell2 = newRow.insertCell(1);
+                    var cell3 = newRow.insertCell(2);
+            
+                    cell1.textContent = location;
+                    cell2.textContent = "₱" + rate;
+                    cell3.innerHTML = `<button class="btn btn-sm btn-danger delete-btn">Delete</button>`;
+            
+                    // Clear input fields after adding
+                    document.getElementById('location').value = "";
+                    document.getElementById('shipping-rate').value = "";
+            
+                    // Add event listener to delete button
+                    cell3.querySelector('.delete-btn').addEventListener('click', function () {
+                        tableBody.removeChild(newRow);
+                    });
+                });
+
+                    document.getElementById('logoutButton').addEventListener('click', function() {
+                    document.getElementById('logoutDialog').style.display = 'block';
+                    document.getElementById('overlay').style.display = 'block';
+                    });
+
+                    document.getElementById('cancelLogout').addEventListener('click', function() {
+                        document.getElementById('logoutDialog').style.display = 'none';
+                        document.getElementById('overlay').style.display = 'none';
+                    });
+
+                    document.getElementById('confirmLogout').addEventListener('click', function() {
+                        window.location.href = 'Cozy_Blend_Bites.html'; 
+                    });
+
+            </script>
+            
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin: Orders</title>
+    <link rel="stylesheet" href="admin_order1_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="#" class="nav-item1"><i class="fas fa-bell"></i></a>
+                    <a href="#" class="nav-item2 profile-icon">
+                        <img src="profile.jpg" alt="Profile Picture">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-drawer" id="navDrawer">
+        <!-- Drawer Header -->
+        <div class="nav-drawer-header">
+            <img src="img_home.png" alt="Shop Logo">
+            <h2>Cozy Blend and Bites</h2>
+        </div>
+        <a href="admin_ui.html"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="admin_order1_page.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+        <a href="admin_products.html"><i class="fas fa-box-open"></i> Products</a>
+        <a href="admin_customers.html"><i class="fas fa-users"></i> Customers</a>
+        <a href="admin_reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+        <a href="admin_settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+    <main class="main-container">
+        <h1>Orders</h1>
+        <div class="filters">
+            <input type="text" placeholder="Search Order ID" class="filter-input">
+            <input type="date" class="filter-input">
+            <select class="filter-input">
+                <option value="">All Status</option>
+                <option value="Pending">Pending</option>
+                <option value="Shipped">Shipped</option>
+                <option value="Delivered">Delivered</option>
+                <option value="Canceled">Canceled</option>
+            </select>
+            <button class="filter-btn">Apply Filters</button>
+        </div>
+
+        <div class="orders-table-container">
+        <table class="orders-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Payment Method</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total Amount</th>
+                    <th>Order Status</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1001</td>
+                    <td>Juan Dela Cruz</td>
+                    <td>09123456789</td>
+                    <td>juandelacruz@example.com</td>
+                    <td>Daet, Camarines Norte</td>
+                    <td>Credit Card</td>
+                    <td>Product A</td>
+                    <td>2</td>
+                    <td>₱500.00</td>
+                    <td>₱1000.00</td>
+                    <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>#1002</td>
+                    <td>Maria Santos</td>
+                    <td>09234567890</td>
+                    <td>mariasantos@example.com</td>
+                    <td>Labo, Camarines Norte</td>
+                    <td>Cash on Delivery</td>
+                    <td>Product B</td>
+                    <td>1</td>
+                    <td>₱750.00</td>
+                    <td>₱750.00</td>
+                    <td><span class="status shipped">Shipped</span></td>
+                </tr>
+                <tr>
+                    <td>#1003</td>
+                    <td>Carlos Rivera</td>
+                    <td>09345678901</td>
+                    <td>carlosrivera@example.com</td>
+                    <td>Jose Panganiban, Camarines Norte</td>
+                    <td>Gcash</td>
+                    <td>Product C</td>
+                    <td>3</td>
+                    <td>₱400.00</td>
+                    <td>₱1200.00</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                    <td>#1004</td>
+                    <td>Ana Reyes</td>
+                    <td>09456789012</td>
+                    <td>anareyes@example.com</td>
+                    <td>Mercedes, Camarines Norte</td>
+                    <td>Bank Transfer</td>
+                    <td>Product D</td>
+                    <td>4</td>
+                    <td>₱300.00</td>
+                    <td>₱1200.00</td>
+                    <td><span class="status canceled">Canceled</span></td>
+                </tr>
+                <tr>
+                    <td>#1005</td>
+                    <td>Pedro Gomez</td>
+                    <td>09567890123</td>
+                    <td>pedrogomez@example.com</td>
+                    <td>Paracale, Camarines Norte</td>
+                    <td>Paypal</td>
+                    <td>Product E</td>
+                    <td>1</td>
+                    <td>₱900.00</td>
+                    <td>₱900.00</td>
+                    <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>#1006</td>
+                    <td>Rosa Manalo</td>
+                    <td>09678901234</td>
+                    <td>rosamanalo@example.com</td>
+                    <td>Capalonga, Camarines Norte</td>
+                    <td>Credit Card</td>
+                    <td>Product F</td>
+                    <td>2</td>
+                    <td>₱700.00</td>
+                    <td>₱1400.00</td>
+                    <td><span class="status shipped">Shipped</span></td>
+                </tr>
+                <tr>
+                    <td>#1007</td>
+                    <td>James Tan</td>
+                    <td>09789012345</td>
+                    <td>jamestan@example.com</td>
+                    <td>Basud, Camarines Norte</td>
+                    <td>Cash on Delivery</td>
+                    <td>Product G</td>
+                    <td>5</td>
+                    <td>₱250.00</td>
+                    <td>₱1250.00</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                    <td>#1008</td>
+                    <td>Elena Cruz</td>
+                    <td>09890123456</td>
+                    <td>elenacruz@example.com</td>
+                    <td>San Lorenzo Ruiz, Camarines Norte</td>
+                    <td>Gcash</td>
+                    <td>Product H</td>
+                    <td>3</td>
+                    <td>₱350.00</td>
+                    <td>₱1050.00</td>
+                    <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>#1009</td>
+                    <td>Victor Santiago</td>
+                    <td>09901234567</td>
+                    <td>victors@example.com</td>
+                    <td>Vinzons, Camarines Norte</td>
+                    <td>Bank Transfer</td>
+                    <td>Product I</td>
+                    <td>1</td>
+                    <td>₱1000.00</td>
+                    <td>₱1000.00</td>
+                    <td><span class="status shipped">Shipped</span></td>
+                </tr>
+                <tr>
+                    <td>#1010</td>
+                    <td>Carmen Villanueva</td>
+                    <td>09012345678</td>
+                    <td>carmenv@example.com</td>
+                    <td>Santa Elena, Camarines Norte</td>
+                    <td>Paypal</td>
+                    <td>Product J</td>
+                    <td>2</td>
+                    <td>₱600.00</td>
+                    <td>₱1200.00</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                </tr>
+
+                <tr>
+                    <td>#1011</td>
+                    <td>Carmen Villanueva</td>
+                    <td>09012345678</td>
+                    <td>carmenv@example.com</td>
+                    <td>Santa Elena, Camarines Norte</td>
+                    <td>Paypal</td>
+                    <td>Product J</td>
+                    <td>2</td>
+                    <td>₱600.00</td>
+                    <td>₱1200.00</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                </tr>
+
+                <tr>
+                    <td>#1012</td>
+                    <td>Carmen Villanueva</td>
+                    <td>09012345678</td>
+                    <td>carmenv@example.com</td>
+                    <td>Santa Elena, Camarines Norte</td>
+                    <td>Paypal</td>
+                    <td>Product J</td>
+                    <td>2</td>
+                    <td>₱600.00</td>
+                    <td>₱1200.00</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                </tr>
+
+                <tr>
+                    <td>#1013</td>
+                    <td>Carmen Villanueva</td>
+                    <td>09012345678</td>
+                    <td>carmenv@example.com</td>
+                    <td>Santa Elena, Camarines Norte</td>
+                    <td>Paypal</td>
+                    <td>Product J</td>
+                    <td>2</td>
+                    <td>₱600.00</td>
+                    <td>₱1200.00</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                </tr>
+
+            </tbody>
+            
+        </table>
+    </div>
+</main>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="logout-dialog" id="logoutDialog">
+        <p>Are you sure you want to log out?</p>
+        <div class="dialog-buttons">
+            <button class="confirm-logout" id="confirmLogout">Yes</button>
+            <button class="cancel-logout" id="cancelLogout">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById('logoutButton').addEventListener('click', function() {
+        document.getElementById('logoutDialog').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+        });
+
+        document.getElementById('cancelLogout').addEventListener('click', function() {
+            document.getElementById('logoutDialog').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        });
+
+        document.getElementById('confirmLogout').addEventListener('click', function() {
+            window.location.href = 'Cozy_Blend_Bites.html'; 
+        });
+    </script>
+</body>
+
+</html>

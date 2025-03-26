@@ -8,7 +8,16 @@
 body {
     overflow: hidden;
     height: 100%;
+    
 }
+
+main {
+    overflow-y: auto; 
+    max-height: 100vh;
+    padding-bottom: 100px;
+}
+
+
 
 
 header {
@@ -51,13 +60,14 @@ header {
     font-weight: bold; 
     font-size: 24px;
     color: white;
-    margin-right: 10px;
+    margin-right: 10px
 }
+
 
 .nav-links {
     list-style: none;
     display: flex;
-    margin-right: 638px;
+    margin-left: -637px;
 }
 
 .nav-links li {
@@ -72,6 +82,7 @@ header {
     backdrop-filter: blur(10px);
     margin-top: 20px;
     margin-left: -65px;
+    z-index: 1000;
     padding: 10px;
     border-radius: 8px;
     min-width: 200px;
@@ -199,86 +210,124 @@ header {
 }
 
 
+.section-title {
+    font-size: 30px;
+    color: #6f4e37;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    margin-left: 45px;
+    text-align: left;
+}
+
+
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: -20px;
-    height: 100vh;
+    align-items: flex-start; 
+    margin-top: 0px;
+    padding: 20px;
 }
 
-.signup-container {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
+.receipt-container {
     width: 500px;
-    height: 420px;
-    margin-top: -30px;
-    max-width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 60px;
+    text-align: center;
 }
 
-
-h2 {
-    margin-bottom: 20px;
+.receipt-header h2 {
+    margin: 0;
+    font-size: 22px;
     color: #333;
 }
 
-.input-group {
-    position: relative;
-    margin-bottom: 15px;
+.store-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
 }
 
-.input-group i {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-}
-
-.input-group input {
+.order-details table {
     width: 100%;
-    padding: 10px 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.order-details th, .order-details td {
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.order-details th {
+    background-color: #f0f0f0;
+}
+
+.order-details tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.receipt-total p {
     font-size: 16px;
-    outline: none;
-    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
 }
 
-.input-group input:focus {
-    border-color: #6f4e37;
+.receipt-total .total {
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.signup-btn {
-    width: 100%;
-    padding: 10px;
-    background: #6f4e37;
+.receipt-footer p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.print-btn {
+    background: #4CAF50;
     color: white;
     border: none;
+    padding: 10px 15px;
+    font-size: 16px;
     border-radius: 5px;
-    font-size: 18px;
     cursor: pointer;
-    transition: 0.3s;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.signup-btn:hover {
-    background: #573c29;
+.print-btn i {
+    margin-right: 8px;
 }
 
-.login-link {
-    margin-top: 15px;
-    font-size: 14px;
+.print-btn:hover {
+    background: #45a049;
 }
 
-.login-link a {
-    color: #6f4e37;
-    text-decoration: none;
-    font-weight: bold;
+.shipping-address {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+  
 }
 
-.login-link a:hover {
-    text-decoration: underline;
+.shipping-address h3 {
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.shipping-address p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 13px;
 }

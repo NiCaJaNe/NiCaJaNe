@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin: Customers</title>
+    <link rel="stylesheet" href="admin_customers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="#" class="nav-item1"><i class="fas fa-bell"></i></a>
+                    <a href="#" class="nav-item2 profile-icon">
+                        <img src="profile.jpg" alt="Profile Picture">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-drawer" id="navDrawer">
+        <div class="nav-drawer-header">
+            <img src="img_home.png" alt="Shop Logo">
+            <h2>Cozy Blend and Bites</h2>
+        </div>
+        <a href="admin_ui.html"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="admin_order1_page.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+        <a href="admin_products.html"><i class="fas fa-box-open"></i> Products</a>
+        <a href="admin_customers.html"><i class="fas fa-users"></i> Customers</a>
+        <a href="admin_reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+        <a href="admin_settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-container">
+        <h2>Customers Page</h2>
+        <div class="customer-filters">
+            <input type="text" id="searchName" placeholder="Search by Name">
+            <input type="text" id="searchEmail" placeholder="Search by Email">
+        </div>
+
+    <div class="table-container">
+        <table class="customer-table">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Orders Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>09123456789</td>
+                    <td>johndoe@example.com</td>
+                    <td>Daet, Camarines Norte</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Maria Santos</td>
+                    <td>09124567890</td>
+                    <td>mariasantos@example.com</td>
+                    <td>Labo, Camarines Norte</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Carlos Dela Cruz</td>
+                    <td>09125678901</td>
+                    <td>carlosdelacruz@example.com</td>
+                    <td>Vinzons, Camarines Norte</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Ana Reyes</td>
+                    <td>09126789012</td>
+                    <td>anareyes@example.com</td>
+                    <td>Mercedes, Camarines Norte</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Ramon Villanueva</td>
+                    <td>09127890123</td>
+                    <td>ramonvillanueva@example.com</td>
+                    <td>Paracale, Camarines Norte</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Luisa Mendoza</td>
+                    <td>09128901234</td>
+                    <td>luisamendoza@example.com</td>
+                    <td>Jose Panganiban, Camarines Norte</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Francisco Torres</td>
+                    <td>09129012345</td>
+                    <td>franciscotorres@example.com</td>
+                    <td>Capalonga, Camarines Norte</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Isabel Cruz</td>
+                    <td>09130123456</td>
+                    <td>isabelcruz@example.com</td>
+                    <td>Basud, Camarines Norte</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Daniel Gomez</td>
+                    <td>09131234567</td>
+                    <td>danielgomez@example.com</td>
+                    <td>San Lorenzo Ruiz, Camarines Norte</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Angela Pascual</td>
+                    <td>09132345678</td>
+                    <td>angelapascual@example.com</td>
+                    <td>Santa Elena, Camarines Norte</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Roberto Hernandez</td>
+                    <td>09133456789</td>
+                    <td>robertohernandez@example.com</td>
+                    <td>San Vicente, Camarines Norte</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Elena Fernandez</td>
+                    <td>09134567890</td>
+                    <td>elenafernandez@example.com</td>
+                    <td>Talisay, Camarines Norte</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Gabriel Morales</td>
+                    <td>09135678901</td>
+                    <td>gabrielmorales@example.com</td>
+                    <td>Daet, Camarines Norte</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Patricia Ramos</td>
+                    <td>09136789012</td>
+                    <td>patriciaramos@example.com</td>
+                    <td>Labo, Camarines Norte</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Alfredo Bautista</td>
+                    <td>09137890123</td>
+                    <td>alfredobautista@example.com</td>
+                    <td>Vinzons, Camarines Norte</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Regina Salvador</td>
+                    <td>09138901234</td>
+                    <td>reginasalvador@example.com</td>
+                    <td>Mercedes, Camarines Norte</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Enrique Navarro</td>
+                    <td>09139012345</td>
+                    <td>enriquenavarro@example.com</td>
+                    <td>Paracale, Camarines Norte</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Melissa Rivera</td>
+                    <td>09140123456</td>
+                    <td>melissarivera@example.com</td>
+                    <td>Jose Panganiban, Camarines Norte</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Victor Santos</td>
+                    <td>09141234567</td>
+                    <td>victorsantos@example.com</td>
+                    <td>Capalonga, Camarines Norte</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Catherine Castillo</td>
+                    <td>09142345678</td>
+                    <td>catherinecastillo@example.com</td>
+                    <td>Basud, Camarines Norte</td>
+                    <td>9</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div>
+    </main>
+
+    <div class="logout-dialog" id="logoutDialog">
+        <p>Are you sure you want to log out?</p>
+        <div class="dialog-buttons">
+            <button class="confirm-logout" id="confirmLogout">Yes</button>
+            <button class="cancel-logout" id="cancelLogout">Cancel</button>
+        </div>
+    </div>
+
+<script>
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        document.getElementById('logoutDialog').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    });
+
+    document.getElementById('cancelLogout').addEventListener('click', function() {
+        document.getElementById('logoutDialog').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    });
+
+    document.getElementById('confirmLogout').addEventListener('click', function() {
+        window.location.href = 'Cozy_Blend_Bites.html';
+    });
+</script>
+
+</body>
+</html>

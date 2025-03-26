@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Blend and Bites - Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-placeholder"></div>
+                <span class="brand-name">CBB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Coffee</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Coffee.html">Coffee</a></li>
+                            <li><a href="Signature_Blends.html">Signature Blends</a></li>
+                            <li><a href="Matcha.html">Matcha</a></li>
+                            <li><a href="Non_Coffee.html">Non-Coffee</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Tea</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Tea.html">Milktea</a></li>
+                            <li><a href="Frappe.html">Frappe</a></li>
+                            <li><a href="Fresh_Lemonade.html">Fresh Lemonade</a></li>
+                            <li><a href="Premium_Green_Tea.html">Premium Green Tea</a></li>
+                            <li><a href="Candy_Cloud_Cola.html">Candy Cloud Cola</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="RiceMeal.html">Rice Meals</a></li>
+
+                 <li>
+                    <a href="#">Snacks</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Snack.html">Snack</a></li>
+                            <li><a href="Burger.html">Burger</a></li>
+                            <li><a href="Sandwich.html">Sandwich</a></li>
+                            <li><a href="Pasta.html">Pasta</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="nav-item"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2 class="cart-title"><i class="fas fa-shopping-cart"></i> Shopping Cart (15)</h2>
+                <div class="cart-actions">
+                    <input type="checkbox" id="select-all" class="select-all-checkbox">
+                    <label for="select-all">Select All</label>
+                    <button class="delete-selected-btn">Delete</button>
+                    <div class="checkout-container">
+                        <a href="checkout.html">
+                            <button class="checkout-btn">Check Out</button>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        <div class="cart-items">
+            <div class="cart-items">
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Avocado</h4>
+                        <h5>Category: Milktea</h5>
+                        <p>Type: Regular</p>
+                    
+                        
+
+                        <div>
+                        <label for="size">Size:</label>
+                        <select id="size" name="size">
+                            <option value="16oz">16 oz</option>
+                            <option value="22oz">22 oz</option>
+                        </select>
+
+                        <label for="add-ons">Add-Ons:</label>
+                        <select id="type" name="type">
+                            <option value="pearl">Pearl</option>
+                            <option value="nata">Nata</option>
+                            <option value="crushed oreo">Crushed Oreo</option>
+                            <option value="cheesecake">Cheesecake</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Cookies and Cream</h4>
+                        <h5>Category: Frappe</h5>
+                        <p>Size: Standard Size</p>
+                        
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>                    
+                    </div>              
+                </div>
+
+
+                    <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product2.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Classic Lemonade</h4>
+                        <h5>Category: Fresh Lemonade</h5>
+
+                        <label for="size">Size:</label>
+                        <select id="size" name="size">
+                            <option value="16oz">16 oz</option>
+                            <option value="22oz">22 oz</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>
+                        </div>
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product2.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>CBB Green Tea</h4>
+                        <h5>Category: Premium Green Tea</h5>
+                
+
+                        <label for="size">Size:</label>
+                        <select id="size" name="size">
+                            <option value="16oz">16 oz</option>
+                            <option value="22oz">22 oz</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>
+                        </div>
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Bubble Gum</h4>
+                        <h5>Category: Candy Cloud Cola</h5>                   
+                        <p>Size: Standard Size</p>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>                
+                    </div>           
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Americano</h4>
+                        <h5>Category: Coffee</h5>
+                        <p>Type: Classic Coffee</p>
+                        <p>Size: Standard Size</p>
+
+                        <label for="drink">Drink:</label>
+                        <select id="drink" name="drink">
+                            <option value="16oz">Hot</option>
+                            <option value="22oz">Iced</option>
+                        </select>
+
+                        <label for="customize">Customize:</label>
+                        <select id="customize" name="customize">
+                            <option value="espresso shot">Espresso Shot</option>
+                            <option value="caramel syrup">Caramel Syrup</option>
+                            <option value="hazelnut syrup">Hazelnut Syrup</option>
+                            <option value="vanilla syrup">Vanilla Syrup</option>
+                            <option value="white choco syrup">White Choco Syrup</option>
+                            <option value="caramel sauce">Caramel Sauce</option>
+                            <option value="chocolate sauce">Chocolate Sauce</option>
+                            <option value="white choco sauce">White Choco Sauce</option>
+                            <option value="sea salt cream">Sea Salt Cream</option>
+                            <option value="vanilla cream">Vanilla Cream</option>
+                            <option value="none">None</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>                    
+                    </div>                
+                </div>
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Mocha Latte</h4>
+                        <h5>Category: Coffee</h5>
+                    
+                        <p>Type: CBB Specials</p>
+                        <p>Size: Standard Size</p>
+
+                        <label for="drink">Drink:</label>
+                        <select id="drink" name="drink">
+                            <option value="16oz">Hot</option>
+                            <option value="22oz">Iced</option>
+                        </select>
+
+                        <label for="customize">Customize:</label>
+                        <select id="customize" name="customize">
+                            <option value="espresso shot">Espresso Shot</option>
+                            <option value="caramel syrup">Caramel Syrup</option>
+                            <option value="hazelnut syrup">Hazelnut Syrup</option>
+                            <option value="vanilla syrup">Vanilla Syrup</option>
+                            <option value="white choco syrup">White Choco Syrup</option>
+                            <option value="caramel sauce">Caramel Sauce</option>
+                            <option value="chocolate sauce">Chocolate Sauce</option>
+                            <option value="white choco sauce">White Choco Sauce</option>
+                            <option value="sea salt cream">Sea Salt Cream</option>
+                            <option value="vanilla cream">Vanilla Cream</option>
+                            <option value="none">None</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>              
+                    </div>               
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>CBB Creamy Matcha Latte</h4>
+                        <h5>Category: Signature Blends</h5>
+                    
+                        <p>Type: Non-Coffee Based</p>
+                        <p>Size: Standard Size</p>
+                      
+                        <label for="drink">Drink:</label>
+                        <select id="drink" name="drink">
+                            <option value="16oz">Hot</option>
+                            <option value="22oz">Iced</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>                   
+                    </div>                  
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Sea Salt Caramel Latte</h4>
+                        <h5>Category: Signature Blends</h5>
+                    
+                        <p>Type: Coffee Based</p>
+                        <p>Size: Standard Size</p>
+                      
+                        <label for="drink">Drink:</label>
+                        <select id="drink" name="drink">
+                            <option value="16oz">Hot</option>
+                            <option value="22oz">Iced</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>               
+                    </div>                   
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Matcha Latte</h4>
+                        <h5>Category: Matcha</h5>
+                        <p>Size: Standard Size</p>
+
+                        <label for="drink">Drink:</label>
+                        <select id="drink" name="drink">
+                            <option value="16oz">Hot</option>
+                            <option value="22oz">Iced</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>                   
+                    </div>                
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Salty Dulce Choco</h4>
+                        <h5>Category: Non-Coffee</h5>
+                        <p>Size: Standard Size</p>
+                        
+                        <label for="drink">Drink:</label>
+                        <select id="drink" name="drink">
+                            <option value="16oz">Hot</option>
+                            <option value="22oz">Iced</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>
+                    </div>
+                   
+                </div>
+                
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Chicksilog</h4>
+                        <h5>Category: Rice Meal</h5>
+
+                        <label for="sides">Sides:</label>
+                        <select id="type" name="type">
+                            <option value="plain rice">Plain Rice</option>
+                            <option value="fried rice">Fried Rice</option>
+                            <option value="egg">Egg</option>
+                            <option value="none">None</option>
+                        </select>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>
+                    </div>
+                
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Clubhouse</h4>
+                        <h5>Category: Sandwich</h5>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>                
+                    </div>
+
+                </div>
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Beefy Burger</h4>
+                        <h5>Category: Burger</h5>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>
+                    </div>
+                   
+                </div>
+
+
+                <div class="cart-item">
+                    <input type="checkbox" class="cart-checkbox">
+                    <img src="product1.jpg" alt="Product Image">
+                    <div class="item-details">
+                        <h4>Carbonara</h4>
+                        <h5>Category: Pasta</h5>
+
+                        <p class="quantity">Quantity: 
+                            <button class="quantity-btn minus">-</button>
+                            <span class="quantity">10</span>
+                            <button class="quantity-btn plus">+</button>
+                            <span class="price">₱55.00</span>
+                        </p>
+                </div>
+
+            </div>
+
+</main>
+
+
+</body>
+</html>

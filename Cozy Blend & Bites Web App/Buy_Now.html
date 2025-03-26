@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now & Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .checkout-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .checkout-header {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .product-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .product-info img {
+            width: 80px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .product-details h4 {
+            font-size: 18px;
+        }
+        .product-details p {
+            color: #777;
+        }
+        .checkout-form input, .checkout-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkout-button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .checkout-button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="product-info">
+            <img src="product.jpg" alt="Product">
+            <div class="product-details">
+                <h4>Product Name</h4>
+                <p>$49.99</p>
+            </div>
+        </div>
+        <h4>Shipping Address</h4>
+        <form class="checkout-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Shipping Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button class="checkout-button">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>

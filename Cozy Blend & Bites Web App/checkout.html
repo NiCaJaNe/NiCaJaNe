@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now & Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-placeholder"></div>
+                <span class="brand-name">CBB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Coffee</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Coffee.html">Coffee</a></li>
+                            <li><a href="Signature_Blends.html">Signature Blends</a></li>
+                            <li><a href="Matcha.html">Matcha</a></li>
+                            <li><a href="Non_Coffee.html">Non-Coffee</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Tea</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Tea.html">Milktea</a></li>
+                            <li><a href="Frappe.html">Frappe</a></li>
+                            <li><a href="Fresh_Lemonade.html">Fresh Lemonade</a></li>
+                            <li><a href="Premium_Green_Tea.html">Premium Green Tea</a></li>
+                            <li><a href="Candy_Cloud_Cola.html">Candy Cloud Cola</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="RiceMeal.html">Rice Meals</a></li>
+
+                 <li>
+                    <a href="#">Snacks</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Snack.html">Snack</a></li>
+                            <li><a href="Burger.html">Burger</a></li>
+                            <li><a href="Sandwich.html">Sandwich</a></li>
+                            <li><a href="Pasta.html">Pasta</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="nav-item"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <!-- Back Button -->
+            <a href="cart.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Cart
+            </a>
+    
+            <div class="checkout-header">Checkout Page</div>
+            <div class="product-info">
+                <div>
+                    <img src="home_img2.jpg" alt="Espresso">
+                    <div class="product-details">
+                        <h4>Product Name</h4>
+                        <p>Price: ₱55.00</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                </div>
+    
+                <div>
+                    <img src="home_img2.jpg" alt="Caramel Macchiato">
+                    <div class="product-details">
+                        <h4>Product Name</h4>
+                        <p>Price: ₱55.00</p>
+                        <p>Quantity: 2</p>
+                    </div>
+                </div>
+    
+                <div>
+                    <img src="home_img2.jpg" alt="Matcha Latte">
+                    <div class="product-details">
+                        <h4>Product Name</h4>
+                        <p>Price: ₱55.00</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                </div>
+    
+                <div>
+                    <img src="home_img2.jpg" alt="Chocolate Frappe">
+                    <div class="product-details">
+                        <h4>Product Name</h4>
+                        <p>Price: ₱55.00</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="home_img2.jpg" alt="Chocolate Frappe">
+                    <div class="product-details">
+                        <h4>Product Name</h4>
+                        <p>Price: ₱55.00</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                </div>
+            </div>
+    
+            <form class="checkout-form">
+                <h4>Shipping Address</h4>
+                <h5>Full Name</h5>
+                <input type="text" placeholder="Enter your full name" required>
+                <h5>Phone Number</h5>
+                <input type="tel" placeholder="Enter your phone number" required>
+                <h5>Email Address</h5>
+                <input type="email" placeholder="Enter your email address (optional)" optional>
+                <h5>Address</h5>
+                <input type="text" placeholder="Enter your address" required>
+                <h5>Payment Method</h5>
+                <select id="payment">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="gcash">Gcash</option>
+                </select>
+
+             <a href="Receipt_Summary.html" class="checkout-button">Place Order</a>
+
+            </form>
+        </div>
+    </main>
+    
+    
+</body>
+</html>

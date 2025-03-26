@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin: Products</title>
+    <link rel="stylesheet" href="admin_products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="#" class="nav-item1"><i class="fas fa-bell"></i></a>
+                    <a href="#" class="nav-item2 profile-icon">
+                        <img src="profile.jpg" alt="Profile Picture">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-drawer" id="navDrawer">
+        <div class="nav-drawer-header">
+            <img src="img_home.png" alt="Shop Logo">
+            <h2>Cozy Blend and Bites</h2>
+        </div>
+        <a href="admin_ui.html"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="admin_order1_page.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+        <a href="admin_products.html"><i class="fas fa-box-open"></i> Products</a>
+        <a href="admin_customers.html"><i class="fas fa-users"></i> Customers</a>
+        <a href="admin_reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+        <a href="admin_settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+    <main class="main-container">
+        <h1>Products</h1>
+        <!-- Add Product Button -->
+        <button id="openModalBtn" class="add-product-btn">Add Product</button>
+    
+        <div class="filters">
+            <input type="text" placeholder="Search by Name..." class="filter-input">
+            <select class="filter-input" >
+                <option value="" selected disabled>Categories</option>
+                <option value="Coffee">Coffee</option>
+                <option value="Signature Blends">Signature Blends</option>
+                <option value="Matcha">Matcha</option>
+                <option value="Non-Coffee">Non-Coffee</option>
+                <option value="MilkTea">Milktea</option>
+                <option value="Frappe">Frappe</option>
+                <option value="Fresh Lemonade">Fresh Lemonade</option>
+                <option value="Premium Green Tea">Premium Green Tea</option>
+                <option value="Candy Cloud Cola">Candy Cloud Cola</option>
+                <option value="RiceMeal">RiceMeal</option>
+                <option value="Snack">Snack</option>
+                <option value="Burger">Burger</option>
+                <option value="Sandwich">Sandwich</option>
+                <option value="Pasta">Pasta</option>
+            </select>
+            <input type="number" placeholder="Min Price" class="filter-input">
+            <input type="number" placeholder="Max Price" class="filter-input">
+            <button class="filter-btn">Apply Filters</button>
+        </div>
+    
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-price">₱55.00</p>
+                    <div class="actions">
+                        <button class="edit-btn">Edit Product</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="logout-dialog" id="logoutDialog">
+        <p>Are you sure you want to log out?</p>
+        <div class="dialog-buttons">
+            <button class="confirm-logout" id="confirmLogout">Yes</button>
+            <button class="cancel-logout" id="cancelLogout">Cancel</button>
+        </div>
+    </div>
+       
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Add Product</h2>
+            <form>
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" required>
+
+                <label for="price">Price</label>
+                <input type="number" id="price" required>
+
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="" selected disabled>Categories</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Signature Blends">Signature Blends</option>
+                    <option value="Matcha">Matcha</option>
+                    <option value="Non-Coffee">Non-Coffee</option>
+                    <option value="MilkTea">Milktea</option>
+                    <option value="Frappe">Frappe</option>
+                    <option value="Fresh Lemonade">Fresh Lemonade</option>
+                    <option value="Premium Green Tea">Premium Green Tea</option>
+                    <option value="Candy Cloud Cola">Candy Cloud Cola</option>
+                    <option value="RiceMeal">RiceMeal</option>
+                    <option value="Snack">Snack</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Sandwich">Sandwich</option>
+                    <option value="Pasta">Pasta</option>
+                </select>
+
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" accept="image/*">
+
+
+                <button type="submit" class="save-btn">Save</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const modal = document.getElementById("productModal");
+        const openModalBtn = document.getElementById("openModalBtn");
+        const closeModalBtn = document.querySelector(".close-btn");
+    
+        openModalBtn.addEventListener("click", () => {
+            modal.style.display = "flex";
+        });
+    
+        closeModalBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    
+        function previewImage(event) {
+            const preview = document.getElementById("imagePreview");
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    preview.src = reader.result;
+                    preview.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        document.getElementById('logoutButton').addEventListener('click', function() {
+        document.getElementById('logoutDialog').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+        });
+
+        document.getElementById('cancelLogout').addEventListener('click', function() {
+            document.getElementById('logoutDialog').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        });
+
+        document.getElementById('confirmLogout').addEventListener('click', function() {
+            window.location.href = 'Cozy_Blend_Bites.html'; 
+        });
+
+    </script>
+    
+   
+</body>
+</html>

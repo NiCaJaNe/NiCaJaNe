@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cozy Blend and Bites - Snack</title>
-    <link rel="stylesheet" href="snack.css">
+    <title>Cozy Blend and Bites - Tea</title>
+    <link rel="stylesheet" href="fresh_lemonade.css">
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -68,14 +68,15 @@
     </header>
 
     <main>
-        <h1 class="section-title">SNACK</h1>
+        <h1 class="section-title2">FRESH LEMONADE</h1>
+
         <div class="product-container">
-        
+
             <div class="product-card">
                 <div class="image-placeholder"></div>
                 <h3 class="product-name">Product Name</h3>
                 <div class="product-info">
-                    <span class="price">₱75.00</span>
+                    <span class="price">₱65.00 - ₱80.00</span>
                     <button class="buy-now">Buy Now</button>
                     <i class="fas fa-shopping-cart cart-icon" onclick="openCart()"></i>
                 </div>
@@ -85,44 +86,23 @@
                 <div class="image-placeholder"></div>
                 <h3 class="product-name">Product Name</h3>
                 <div class="product-info">
-                    <span class="price">₱75.00</span>
+                    <span class="price">₱65.00 - ₱80.00</span>
                     <button class="buy-now">Buy Now</button>
                     <i class="fas fa-shopping-cart cart-icon" onclick="openCart()"></i>
                 </div>
             </div>
 
-            <div class="product-card">
+             <div class="product-card">
                 <div class="image-placeholder"></div>
                 <h3 class="product-name">Product Name</h3>
                 <div class="product-info">
-                    <span class="price">₱75.00</span>
-                    <button class="buy-now">Buy Now</button>
-                    <i class="fas fa-shopping-cart cart-icon" onclick="openCart()"></i>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="image-placeholder"></div>
-                <h3 class="product-name">Product Name</h3>
-                <div class="product-info">
-                    <span class="price">₱75.00</span>
-                    <button class="buy-now">Buy Now</button>
-                    <i class="fas fa-shopping-cart cart-icon" onclick="openCart()"></i>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="image-placeholder"></div>
-                <h3 class="product-name">Product Name</h3>
-                <div class="product-info">
-                    <span class="price">₱75.00</span>
+                    <span class="price">₱65.00 - ₱80.00</span>
                     <button class="buy-now">Buy Now</button>
                     <i class="fas fa-shopping-cart cart-icon" onclick="openCart()"></i>
                 </div>
             </div>
         </div>
         </div>
-
 
     </main>
 
@@ -131,11 +111,17 @@
             <span class="close-btn" onclick="closeCart()">&times;</span>
             <h3>Product Name</h3>
             <div class="image-placeholder"></div>
-            <p><b>₱75.00</b></p>
+            <p><b>₱65.00</b></p>
     
             <div class="options-container">
                 <div class="options">
-
+    
+                    <label for="size"><b>Size:</b></label>
+                    <select id="size">
+                        <option value="16oz">16 oz</option>
+                        <option value="22oz">22 oz</option>
+                    </select>
+                  
                 </div>
     
                 <div class="quantity-cart">

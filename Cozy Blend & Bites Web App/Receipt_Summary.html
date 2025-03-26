@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Summary</title>
+    <link rel="stylesheet" href="receipt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-placeholder"></div>
+                <span class="brand-name">CBB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Coffee</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Coffee.html">Coffee</a></li>
+                            <li><a href="Signature_Blends.html">Signature Blends</a></li>
+                            <li><a href="Matcha.html">Matcha</a></li>
+                            <li><a href="Non_Coffee.html">Non-Coffee</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Tea</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Tea.html">Milktea</a></li>
+                            <li><a href="Frappe.html">Frappe</a></li>
+                            <li><a href="Fresh_Lemonade.html">Fresh Lemonade</a></li>
+                            <li><a href="Premium_Green_Tea.html">Premium Green Tea</a></li>
+                            <li><a href="Candy_Cloud_Cola.html">Candy Cloud Cola</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="RiceMeal.html">Rice Meals</a></li>
+
+                 <li>
+                    <a href="#">Snacks</a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Snack.html">Snack</a></li>
+                            <li><a href="Burger.html">Burger</a></li>
+                            <li><a href="Sandwich.html">Sandwich</a></li>
+                            <li><a href="Pasta.html">Pasta</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="nav-item"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <h2>Receipt Summary</h2>
+        </div>
+
+        <div class="receipt-body">
+            <div class="store-info">
+                <p><strong>Cozy Blend and Bites</strong></p>
+                <p>Taft Iraya Road, Barangay III, Daet, Camarines Norte, 4600</p>
+            </div>
+
+            <hr>
+
+            <!-- Shipping Address Section -->
+            <div class="shipping-address">
+                <h3>Shipping Address</h3>
+                <p><strong>Full Name:</strong> Juan Dela Cruz</p>
+                <p><strong>Phone Number:</strong> +63 912 345 6789</p>
+                <p><strong>Email Address:</strong> juan.delacruz@email.com</p>
+                <p><strong>Address:</strong> Purok 2, Barangay IV, Daet, Camarines Norte</p>
+                <p><strong>Payment Method:</strong> Gcash</p>
+            </div>
+
+            <hr>
+
+            <!-- Order Details Section -->
+            <div class="order-details">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Espresso</td>
+                            <td>1</td>
+                            <td>₱55.00</td>
+                            <td>₱55.00</td>
+                        </tr>
+                        <tr>
+                            <td>Caramel Macchiato</td>
+                            <td>2</td>
+                            <td>₱55.00</td>
+                            <td>₱110.00</td>
+                        </tr>
+                        <tr>
+                            <td>Matcha Latte</td>
+                            <td>1</td>
+                            <td>₱55.00</td>
+                            <td>₱55.00</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate Frappe</td>
+                            <td>1</td>
+                            <td>₱55.00</td>
+                            <td>₱55.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="receipt-total">
+                <p>Subtotal: <span>₱275.00</span></p>
+                <p>Shipping Fee: <span>₱30.00</span></p>
+                <p class="total">Total: <span>₱305.00</span></p>
+            </div>
+
+            <hr>
+
+            <div class="receipt-footer">
+                <p>Thank you for your purchase!</p>
+            </div>
+
+    
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
